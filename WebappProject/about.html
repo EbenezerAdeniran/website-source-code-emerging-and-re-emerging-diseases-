@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.csshttps://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css ">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/University-of-Abuja-Uniabuja-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="researchgroups.html">RESEARCH GROUPS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+<!-- ---- about us content----- -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Our Mission</h1>
+                    <p>To advance the understanding, prevention, and treatment of emerging and re-emerging diseases through cutting-edge research and collaboration, ensuring a healthier future for the nation and global communities </p>
+                    <a href="researchgroups.html"class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/laboratory.jpg">
+                </div>
+            </div>
+        </section>
+         <!-- ----footer---- -->
+          <section class="footer">
+                <h4>University of Abuja</h4>
+                <p>2024 Copyrights Limited</p>
+          </section>
+          <!------Javascript for Toggle Menu------>
+          <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+              navLinks.style.right = "0";
+            }
+            function hideMenu(){
+              navLinks.style.right = "-200px";
+            }
+          </script>
+</body>
+</html>

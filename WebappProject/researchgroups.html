@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Groups</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.csshttps://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css ">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/University-of-Abuja-Uniabuja-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="researchgroups.html">RESEARCH GROUPS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Research Group</h1>
+
+    </section>
+<!-- ---- about us content----- -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>The Colpodella Dieseases</h1>
+                    <p>Colpodella species shares morphological and genetic similarities with apicomplexans. Although most species of this genus are free-living organisms that feed on other protists and algae, reports indicate their occurrence in ticks (Kassim et al, 2024) and human patients (Jiang et al, 2018) of an individual with a history of tick bite manifesting neurological symptoms. During an investigation of tick-borne pathogens (TBPs) in blood samples of cattle, goats, and in ticks collected on them, Colpodella sp., DNA was detected in a Rhipicephalus bursa tick collected from cattle thus, highlighting the unprecedented presence of this organism in ticks.
+                        It has also been isolated from calves, with diarrhea in Turkey (Leander and Keeling, 2003).
+                        In a recent study in Abuja and Jos (Chukwu et al, 2023) while investigating the prevalence of Cryptosporidium, Colpodella for the first time in Africa was isolated from some sheep and goats examined.
+                        These emerging reports underscore the necessity of exploring further the role this lesser - known potential pathogenic organism plays in the health of its animal and human hosts.
+                         
+                        The detection of Colpodella sp among small ruminants in two (Abuja and Jos) out of seven states within the north central region of Nigeria is of great concern and as a result, the relationship between them and their small ruminant hosts should be further investigated </p>
+                    <a href="profiles.html"class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/copodella.png">
+                </div>
+            </div>
+        </section>
+         <!-- ----footer---- -->
+          <section class="footer">
+                <h4>University of Abuja</h4>
+                <p>2024 Copyrights Limited</p>
+          </section>
+            <!------Javascript for Toggle Menu------>
+            <script>
+
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                  navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                  navLinks.style.right = "-200px";
+                }
+              </script>
+</body>
+</html>

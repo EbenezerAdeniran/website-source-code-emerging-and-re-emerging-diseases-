@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----header--- */
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/laboratorybanner.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.sub-header h1{
+  margin-bottom:100px;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content:space-between;
+  align-items:center;
+}
+nav img{
+  width: 150px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding:8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #636363;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background:#f44336;
+  display: block;
+  margin: auto;
+  transition:0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: #ebeaea;
+}
+
+.container p {
+  text-align: center;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 70px 50px 0 50px;
+  width: 25%;
+  max-width: 350px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+
+.card .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.card .profile-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.content p {
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.social-media {
+  margin-top: 30px;
+}
+
+.social-media i {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #ebeaea;
+  padding: 15px;
+  margin: 0 3px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social-media i:hover {
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 969px) {
+  .card-wrapper {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-wrapper {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    margin: 20px;
+  }
+}
